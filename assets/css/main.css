@@ -2974,8 +2974,14 @@ input, select, textarea {
 			padding: 1.75em 1.75em 0.1em 1.75em ;
 			background-color: #353849;
 			border-radius: 5px;
+			box-shadow: 5px 5px 20px #000;
 			margin: 1.5em 3em 1.5em 0;
 			width: calc(50% - 1.5em);
+			transition: all .2s ease-in-out;
+		}
+
+		.features article:hover {
+		transform: scale(1.1)
 		}
 
 			.features article:nth-child(2n) {
@@ -3633,7 +3639,8 @@ input, select, textarea {
 			-moz-transform: scaleY(-1) scaleX(-1);
 			-webkit-transform: scaleY(-1) scaleX(-1);
 			-ms-transform: scaleY(-1) scaleX(-1);
-			transform: scaleY(-1) scaleX(-1);
+			transform:
+			scaleY(-1) scaleX(-1);
 		}
 
 		.wrapper .inner {
@@ -3769,6 +3776,54 @@ input, select, textarea {
 			.wrapper.spotlight .content {
 				width: 100%;
 				-ms-flex: 2;
+			}
+
+			.gridwrapper-skills {
+			  display: grid;
+			  grid-template-columns: 1fr 1fr 1fr;
+			  grid-template-rows: 1fr;
+			}
+
+			.box1 {
+			  grid-column-start: 1;
+			  grid-column-end: 4;
+			}
+
+			h1.skills {
+			  font-family: arial;
+			  font-size: 40px;
+			  font-weight: bold;
+			  color: #fff;
+			  padding-right: 30px;
+			  margin: 0;
+			  margin-top: 20px;
+			  display: flex;
+			  justify-content: center;
+			}
+
+			p.skills-left {
+			  text-align: center;
+			  grid-row: 1/1;
+			}
+
+			p.skills-middle {
+			  text-align: center;
+			  grid-row: 2;
+			}
+
+			p.skills-right {
+			  text-align: center;
+			  grid-row: 3;
+			}
+
+			p span {
+			  font-size: 1.5rem;
+			  font-weight: bold;
+			  padding-bottom: 10px;
+			}
+
+			span {
+			  padding-bottom: 20px;
 			}
 
 			.wrapper.spotlight:nth-child(2n - 1) .inner {
